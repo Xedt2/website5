@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: rgb(18, 18, 24);
+            margin: 0;
+            user-select: none;
+            overflow-y: hidden;
+        }
+        .screen{
+            height: 100vh;
+            width: 100%;
+        }
+        .field{
+            width: 900px;
+            height: 500px;
+            background-color: rgb(41, 47, 51);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .field:hover{
+            background-color: rgb(49, 56, 61);
+        }
+        .card1,.card2,.card3,.card4{
+
+            width: 100px;
+            height: 90%;
+            margin: 5px;
+            margin-top: 2.5%;
+            background-color: rgb(0, 136, 255);
+            border-radius: 18px;
+            transition: 0.3s;
+            overflow: hidden;
+            filter:brightness(20%);
+        }
+        .card1:hover,.card2:hover,.card3:hover,.card4:hover{
+            width: 500px;
+            filter:brightness(100%);
+        }
+        .card1:active,.card2:active,.card3:active,.card4:active{
+            filter:brightness(70%);
+        }
+        .p{
+            display: inline-block;
+            color: rgb(46, 46, 46);
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 0.2s;
+        }
+        .p:hover{
+            color: white;
+        }
+        img{
+            height: 100%;
+            object-fit: fill;
+        }
+    </style>
+    <body>
+        <div class="screen">
+            <p class="p">Xedt</p>
+            <div class="field">
+                <div class="card1"><img src="453.jpeg"></div>
+                <div class="card2"><img src="49811-landscape-lake-sunset-trees-nature-748x421.jpg"></div>
+                <div class="card3"><img src="aesthetic-beach-nature-jnfoo0qw1acrwgl9.jpg"></div>
+                <div class="card4"><img src="green-mountains-and-pine-trees-nature-cyweppgbcc38du5m.jpg" alt=""></div>
+            </div>
+        </div>
+    </body>
+    <script>
+        console.log('Hallo');
+    </script>
+</html>
